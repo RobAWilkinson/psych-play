@@ -1,7 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const RollbarSourceMapPlugin = require('rollbar-sourcemap-webpack-plugin')
 
 
 module.exports = {
@@ -17,11 +16,6 @@ module.exports = {
     filename: "[name].js",
   },
   plugins: [
-    new RollbarSourceMapPlugin({
-      accessToken: '9c1cafea22d0448da0ed02cf90e6dde7',
-      version: '1.0',
-      publicPath: "https://www.platinumsitters.com/"
-    }),
     new webpack.EnvironmentPlugin([
       "NODE_ENV"
     ]),

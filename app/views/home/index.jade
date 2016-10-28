@@ -10,14 +10,20 @@ html
       title= pkg.name
 
     meta(name='description', content=pkg.description)
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+    script(src="/js/jspsych.js")
+    script(src="/js/jspsych-text.js")
+    script(src="js/jspsych-single-stim.js")
+    script(src="js/jspsych-survey-multi-choice.js")
+
 
     block head
       link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
       link(href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
       link(rel='stylesheet', href='/css/app.css')
+      link(rel='stylesheet', href='/css/jspsych.css')
   body
     #main
-    
     if process.env.NODE_ENV == 'development'
       script(type="application/javascript", src="http://localhost:8888/public/main.js")
     else

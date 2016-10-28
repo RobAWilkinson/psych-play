@@ -12,7 +12,7 @@
   },
   "scripts": {
     "postinstall": "webpack --config webpack.production.config.js",
-    "start-dev": "node hotLoadServer.js &  NODE_PATH=./config:./app/controllers NODE_ENV=development  ./node_modules/.bin/nodemon server.js",
+    "start-dev": "node hotLoadServer.js &  NODE_PATH=./config:./app/controllers NODE_ENV=development  node server.js",
     "start": "node server.js"
   },
   "dependencies": {

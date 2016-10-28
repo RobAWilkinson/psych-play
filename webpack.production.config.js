@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     main: [
       'babel-polyfill',
-      './client/admin/main'
+      './client/main'
     ],
   },
   output: {

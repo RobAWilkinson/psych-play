@@ -6,10 +6,6 @@
     "name": "Rob Wilkinson",
     "email": "rob@naladigitalsolutions.com"
   },
-  "engines": {
-    "node": "4.2.1",
-    "npm": "3.8.0"
-  },
   "scripts": {
     "postinstall": "webpack --config webpack.production.config.js",
     "start-dev": "node hotLoadServer.js &  NODE_PATH=./config:./app/controllers NODE_ENV=development  node server.js",

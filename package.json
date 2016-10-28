@@ -6,6 +6,10 @@
     "name": "Rob Wilkinson",
     "email": "rob@naladigitalsolutions.com"
   },
+  "engines": {
+    "node": "^4.x.x || ^6.x.x",
+    "npm": ">= 3.x.x"
+  },
   "scripts": {
     "postinstall": "webpack --config webpack.production.config.js",
     "start-dev": "node hotLoadServer.js &  NODE_PATH=./config:./app/controllers NODE_ENV=development  node server.js",

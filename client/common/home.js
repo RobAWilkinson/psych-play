@@ -21,10 +21,6 @@ class Home extends Component {
     if(currentSurvey.trials[responseCount]) {
     return (
       <div>
-        <h1>Home</h1>
-        {responseCount}
-          {currentSurvey.trials[responseCount].question}
-
           <Trial
             question={currentSurvey.trials[responseCount].question}
             answers={currentSurvey.trials[responseCount].answers}

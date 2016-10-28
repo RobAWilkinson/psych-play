@@ -38,7 +38,6 @@ export default class Trial extends Component {
     console.log('called');
     return (
       <div>
-        <h1>Trial</h1>
         <div ref="main">
         </div>
       </div>
